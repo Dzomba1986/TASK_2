@@ -1,4 +1,10 @@
 import registerPage from "../POM/registerPage";
+import { faker } from "@faker-js/faker";
+
+const firstName = faker.person.firstName();
+const lastName = faker.person.lastName();
+const email = faker.internet.email();
+const password = faker.internet.password();
 
 describe ('Homework Task 2', () => {
 
@@ -9,11 +15,10 @@ describe ('Homework Task 2', () => {
          })
 
          it('Register user', () =>{
-
-            registerPage.registerFlow(John, Doe, doetest.com, Test12345);
-
+            registerPage.registerFlow(firstName, lastName, email, password);
+            registerPage.registerCompleatedFild().should('contain', 'Your registration completed');
          })
 
-
          
+      
 })

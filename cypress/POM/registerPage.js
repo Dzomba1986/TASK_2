@@ -35,15 +35,20 @@ class registerPage {
     registerButton() {
         return  cy.get('#register-button');
     }
+
+    registerCompleatedFild(){
+        return cy.get('.result');
+    }
     
     registerFlow (firstName, lastName, email, password){
-        return this.genderMale().click();
-        return this.firstNameInputField().type(firstName);
-        return this.lastNameInputField().type(lastName);
-        return this.emailInputField().type(email);
-        return this.passwordlInputField().type(password);
-        return this.passwordConfirmationInputField().type(password);
-        return this.registerButton().click();
+         this.registerTab().click();   
+         this.genderMale().click();
+         this.firstNameInputField().type(firstName);
+         this.lastNameInputField().type(lastName);
+         this.emailInputField().type(email);
+         this.passwordlInputField().type(password);
+         this.passwordConfirmationInputField().type(password);
+         this.registerButton().click();
     }
 }    
 
