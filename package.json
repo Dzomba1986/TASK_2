@@ -1,0 +1,24 @@
+{
+  "name": "sqe_task_2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dzomba1986/TASK_2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dzomba1986/TASK_2/issues"
+  },
+  "homepage": "https://github.com/Dzomba1986/TASK_2#readme",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}
