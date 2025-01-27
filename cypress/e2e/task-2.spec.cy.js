@@ -43,7 +43,7 @@ describe ('Homework Task 2', () => {
             registerPage.sortingButton().select(3).should('contain', 'Price: Low to High');
          })
 
-         it('Checking sorting functionality', () =>{
+         it('Checking items per page functionality', () =>{
             registerPage.computersTabMainMenu().click();
             registerPage.computersSubGroupsTitle().eq(3).click();
             registerPage.itemsPerPageButton().select(0);
@@ -98,8 +98,4 @@ describe ('Homework Task 2', () => {
             registerPage.confirmationMessage().should('contain', 'Your order has been successfully processed!');
          })
 
-
-
-         
-      
 })
